@@ -26,11 +26,9 @@ img {
   display: block;
 }
 .container {
-  max-width: 1440px;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 156px;
-  padding-right: 156px;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .section {
   padding-top: 120px;
@@ -40,9 +38,8 @@ img {
 
 /* header */
 .header-section {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin: 0;
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -52,10 +49,16 @@ img {
 }
 
 .header-nav-list,
-.header-contacts-list,
+.header-contacts-list {
+  display: flex;
+  margin: 0;
+  gap: 40px;
+  padding: 24px 0;
+}
 .header-nav {
   display: flex;
   margin: 0;
+  /* padding: 24px 0; */
 }
 
 .header-nav-link:hover,
@@ -82,7 +85,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   margin-right: 76px;
-  padding-top: 2px;
+  margin-top: 25px;
 }
 
 .logo-text {
@@ -96,7 +99,6 @@ img {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
-  margin-right: 40px;
 }
 
 .header-contacts-container {
@@ -110,7 +112,6 @@ img {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
-  margin-left: 40px;
 }
 
 /* section-solution */
@@ -182,7 +183,17 @@ img {
 }
 
 .features-main-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-text {
@@ -300,12 +311,12 @@ img {
 
 .section-footer {
   background-color: #2e2f42;
-  margin: 0;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .footer-logo-link {
+  display: inline-block;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -314,6 +325,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .logo-text-footer {
@@ -321,11 +333,10 @@ img {
 }
 
 .footer-text {
+  max-width: 264px;
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 17.5px;
-  margin-bottom: 0;
 }
