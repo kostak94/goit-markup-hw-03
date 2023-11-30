@@ -170,7 +170,7 @@ img {
 }
 
 .features-item {
-  max-width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 
 .features-title {
